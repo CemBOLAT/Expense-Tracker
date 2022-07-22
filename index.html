@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="trackerContainer">
+            <div class="trackerTitle">HOME BUDGET</div>
+            <div class="newEntryDisplay">New ENTRY</div>
+            <div class="transactionForm">
+                <label for="text"></label>
+                <input class="form" type="text" name="text" id="text" required placeholder="Enter Text..." autocomplete="off">
+                <label for="value"></label>
+                <input class="form" type="value" name="value" id="value" required placeholder="Enter Value..." autocomplete="off">
+                <div id="submitButton">
+                    <div id="submitButtonTextDisplay">ADD TRANSACTION</div>
+                </div>
+            </div>
+            <div id="receipt">
+                <div class="receiptBox" id="inflow">
+                    <div class="boxName">INFLOW</div>
+                    <div id="inflowValue">$0</div>
+                </div>
+                <div class="receiptBox" id="outflow">
+                    <div class="boxName">OUTFLOW</div>
+                    <div id="outflowValue">$0</div>
+                </div> 
+                <div class="receiptBox" id="balance">
+                    <div class="boxName">BALANCE</div>
+                    <div id="balanceValue">$0</div>
+                </div>
+            </div>
+            <div class="historyDisplay">History</div>
+            <div id="historyBox"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
